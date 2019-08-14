@@ -52,10 +52,6 @@ const Gallery = () => {
             /> 
         })
       }
-      {/* {
-        items.map((item, i) => (
-        <Item slug={} tag={item.tag} {...item} key={i} /> 
-      ))} */}
     </Container>
   )
 };

@@ -34,6 +34,7 @@
       alt="Netlify Status"
     />
   </a>
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/22dd12e0-5574-42cb-829b-aa9c8cffdffd/deploy-status)](https://app.netlify.com/sites/the-kenyan-dev/deploys)
 </p>
 
 <p align="center">
