@@ -34,9 +34,6 @@
       alt="Netlify Status"
     />
   </a>
-  <p>
-      [![Netlify Status]()]() 
-  </p>
 </p>
 
 <p align="center">
