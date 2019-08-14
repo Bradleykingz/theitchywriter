@@ -14,7 +14,7 @@ const Index = ({ data }) => (
       <Title as="h2" size="large">
         {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
       </Title>
-      <Modal>
+      {/* <Modal>
         <video
           src="https://i.imgur.com/gzFqNSW.mp4"
           playsInline
@@ -22,9 +22,9 @@ const Index = ({ data }) => (
           autoPlay
           muted
         />
-      </Modal>
+      </Modal> */}
     </Box>
-    <Gallery items={data.homeJson.gallery} />
+    <Gallery />
     <div style={{ height: '50vh' }} />
     <IOExample />
   </Layout>
@@ -38,6 +38,15 @@ export default Index;
 
 export const query = graphql`
   query HomepageQuery {
+    allMarkdownRemark {
+    edges {
+      node {
+        fields {
+          slug
+        }
+      }
+    }
+  }
     homeJson {
       title
       content {
@@ -49,6 +58,7 @@ export const query = graphql`
       gallery {
         title
         copy
+        tag
         image {
           childImageSharp {
             fluid(maxHeight: 500, quality: 90) {

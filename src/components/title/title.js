@@ -7,7 +7,7 @@ const Title = ({ children, as = 'span', size }) => {
     <Text as={as} size={size}>
       {children}
     </Text>
-  );
+  ); 
 };
 
 Title.propTypes = {

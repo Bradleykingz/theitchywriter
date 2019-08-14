@@ -1,8 +1,8 @@
 const path = require('path');
 
 module.exports = {
-  siteTitle: `Gatsby Universal`,
-  siteTitleShort: `GatsbyU`,
+  siteTitle: `Retroshift Blog`,
+  siteTitleShort: `RetroS`,
   siteDescription: `An opinionated starter for Gatsby.`,
   siteUrl: `https://gu.fabianschultz.com`,
   themeColor: `#000`,
