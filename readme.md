@@ -160,5 +160,5 @@ module.exports = {
 ```
 
 ## Author
-
-* Fabian Schultz ([@fschultz_](https://twitter.com/fschultz_)) - [Stink Studios](https://stinkstudios.com)
+* Bradley ([@bradleykingz](https://twitter.com/bradleyukingz))
+* Forked from Fabian Schultz ([@fschultz_](https://twitter.com/fschultz_)) - [Stink Studios](https://stinkstudios.com)
