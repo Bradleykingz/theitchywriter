@@ -28,23 +28,19 @@
       alt="styled with prettier"
     />
   </a>
-  <a href="https://app.netlify.com/sites/gatsby-universal/deploys">
+  <a href="https://app.netlify.com/sites/the-kenyan-dev/deploys">
     <img
-      src="https://api.netlify.com/api/v1/badges/3e49bb6e-c385-4807-a7e8-70eea491cfdf/deploy-status"
+      src="https://api.netlify.com/api/v1/badges/22dd12e0-5574-42cb-829b-aa9c8cffdffd/deploy-status"
       alt="Netlify Status"
     />
   </a>
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/22dd12e0-5574-42cb-829b-aa9c8cffdffd/deploy-status)](https://app.netlify.com/sites/the-kenyan-dev/deploys)
+  <p>
+      [![Netlify Status]()]() 
+  </p>
 </p>
 
 <p align="center">
   An <em>opinionated</em> Gatsby v2 starter with React Context, styled-components, page transitions, scroll events with <code>IntersectionObserver</code> and a focus on accessibility and SEO. Made for state-of-the-art marketing sites.
-</p>
-
-<p align="center">
-  <strong>
-    You can access a demo of this starter online at <a href="https://gatsby-universal.netlify.com">gatsby-universal.netlify.com</a>.
-  </strong>
 </p>
 
 ***
