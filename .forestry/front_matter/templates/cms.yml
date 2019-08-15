@@ -1,0 +1,22 @@
+---
+label: CMS
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: mainTag
+  label: mainTag
+- type: image_gallery
+  name: attatchments
+  label: attatchments
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: copy
+  label: copy
+- type: file
+  name: featuredImage
+  label: featuredImage
