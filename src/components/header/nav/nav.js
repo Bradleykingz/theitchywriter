@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container } from './nav.css';
-import Github from '../../../../content/images/icons/github.svg'
-import Twitter from '../../../../content/images/icons/twitter.svg'
+import Github from '../../../../content/images/icons/github-logo.png'
+import Twitter from '../../../../content/images/icons/twitter.png'
 
 
 const Nav = () => (
