@@ -5,7 +5,7 @@ import posed from 'react-pose';
 import { Container } from './header.css';
 import Title from 'components/title';
 import Nav from 'components/header/nav';
-import KD from '../../../content/images/gallery/cloud.svg'
+import KD from '../../../content/images/icons/cloud.svg'
 
 // Example of a component-specific page transition
 const AnimatedContainer = posed.div({
