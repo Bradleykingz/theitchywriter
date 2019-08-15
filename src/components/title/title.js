@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Text } from './title.css';
+import { Text, ShadowBoxCss } from './title.css';
 
 const Title = ({ children, as = 'span', size }) => {
   return (
@@ -17,3 +17,17 @@ Title.propTypes = {
 };
 
 export default Title;
+
+export const SubTitle = ({ children }) => (
+  <div>
+      <p>{children}</p>
+  </div>
+)
+
+export const ShadowBox = ({children})=> {
+  return (
+    <ShadowBoxCss>
+      {children}
+    </ShadowBoxCss>
+  )
+}

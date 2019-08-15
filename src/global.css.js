@@ -91,5 +91,6 @@ export default createGlobalStyle`
   p {
     margin-bottom: 1rem;
     line-height: 2.5rem;
+    color: #3E4756;
   }
 `;
