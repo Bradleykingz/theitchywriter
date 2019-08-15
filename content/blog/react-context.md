@@ -1,10 +1,10 @@
 ---
+title: Intro to The Payment Request API
 additionalTags: None whatsoever
-copy: For global styles.
-title: Sweet Pandas Eating Sweets
-date: '2017-08-10'
+copy: This post shows how to make simple requests through the payment API.
+date: '2019-08-10'
 description: 'Nothing is impossible. By condensing, we self-actualize.'
-featuredImage: ./awesome.png
+featuredImage: ../images/gallery/intersection-observer.jpg
 mainTag: javascript
 ---
 Power is a constant.

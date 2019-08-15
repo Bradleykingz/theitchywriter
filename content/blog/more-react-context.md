@@ -1,9 +1,9 @@
 ---
+title: Introduction to Sets and Maps in Javascript
 additionalTags: None whatsoever
-copy: For the love of all that is holy.
-title: Sweet Pandas Eating Sweets
+copy: This post gives a quick overview on the differences between sets and maps.
 date: '2017-08-10'
 description: 'Nothing is impossible. By condensing, we self-actualize.'
-featuredImage: ./awesome.png
-mainTag: pandas
+featuredImage: ../images/gallery/react-context.jpg
+mainTag: ES6
 ---

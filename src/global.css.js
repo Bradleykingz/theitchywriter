@@ -88,6 +88,15 @@ export default createGlobalStyle`
     max-width: 100%;
   }
 
+  h2 {
+    font-size: 3rem;
+    color: #343a40;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
   p {
     margin-bottom: 1rem;
     line-height: 2.5rem;
