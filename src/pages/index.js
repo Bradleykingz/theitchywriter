@@ -57,48 +57,33 @@ const Index = ({ data }) => {
       </Modal> */}
       </Box>
 
-      <div>
-        <h2 style={{ color: "#004196", margin: "2rem 0" }}>What I Do</h2>
-        <div style={{ marginBottom: "200px", padding: "3rem 0" }}>
-          <h3 style={{ color: "#004196", margin: "2rem 0" }}>
-            The Tech Stack
-          </h3>
-          <p>
-            I work with a number of frontend and backend technologies. I specifically specialise in:
-          </p>
-          <img style={{ width: "80px" }} src={NodeJsLogo} />
-          <img style={{ width: "80px" }} src={VueJsLogo} />
-          <img style={{ width: "80px" }} src={PythonLogo} />
-          <img style={{ width: "80px" }} src={RustLogo} />
-          <img style={{ width: "80px" }} src={GoLogo} />
-        </div>
-      </div>
       <div style={{ marginBottom: "200px", padding: "3rem 0" }}>
         <h2 style={{ color: "#004196", margin: "2rem 0" }}>Our Services</h2>
         <ContentBox>
           <div>
-            <h3>Mergers</h3>
+            <h3>Web Development</h3>
             <p>
-              Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum de obside ut laniavit arbor palmis, cum quin. Rupes vetat…
+              We build modern websites using state-of-the art Javascript frameworks - VueJS & React (this website is build using ReactJS).
+            </p>
+          </div>
+          <div>
+            <h3>Big Data</h3>
+            <p>
+              We use Big Data frameworks like Hadoop and Spark to build data pipelines for businesses. 
+              This includes custom machine learning training models and natural language processing. 
             </p>
           </div>
 
           <div>
-            <h3>Business Sales</h3>
+            <h3>Tech Stack Consultation</h3>
             <p>
-              Lorem markdownum, dictis umbrosum dextrum, Lelegeia quamquam distantes pares ignisque quaerit dederat gemino Aethiopesque caelo ulciscitur…
+              Need a quote for the price of a simple static website or how long a logo design is going to take?
             </p>
           </div>
           <div>
-            <h3>Consultation</h3>
+            <h3>Writing</h3>
             <p>
-              Cyanee nec pedicis positi. Esse et diem forte quoque et ieiunia vixque dixit negari ullis stamina : trahit. Tanta rictus in mitia causa…
-            </p>
-          </div>
-          <div>
-            <h3>Accounting</h3>
-            <p>
-              Lorem markdownum Achaica revolutaque amore , penitus puppes nec furit, clipeus fatetur, mira inter accedere. Dedit dum raptoresque Oete…
+              I spend my free time writing blog posts on technology-oriented websites like Dataversity, Forbes, Alligatorio and Eggheadio.
             </p>
           </div>
           <div>
@@ -117,12 +102,6 @@ const Index = ({ data }) => {
             <h3>Superannuation</h3>
             <p>
               Sint ad cupidatat proident Lorem nulla consectetur nisi reprehenderit ea elit id voluptate sit exercitation. Nisi est elit esse in ullamco aliqua commodo velit consectetur laborum voluptate dolore.
-            </p>
-          </div>
-          <div>
-            <h3>Tax Returns</h3>
-            <p>
-              Culpa voluptate quis occaecat culpa mollit cupidatat labore minim ipsum. Magna quis anim cillum esse.
             </p>
           </div>
 
