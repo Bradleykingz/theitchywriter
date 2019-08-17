@@ -4,8 +4,9 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 4rem;
-  box-shadow: 7px 2px 9px 5px rgba(0,0,0,0.1);
+  margin-top: 1rem;
+  margin-right: 3rem;
+  margin-left: 10rem;
 
   a {
     color: #757575;
