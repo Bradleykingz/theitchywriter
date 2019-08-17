@@ -13,6 +13,11 @@ import 'global.css.js'
 import Img from 'gatsby-image'
 import PrimaryButton from '../components/button/primaryButton';
 import ContentBox from '../components/content/content';
+import NodeJsLogo from '../../content/images/icons/nodejs-480.png'
+import VueJsLogo from '../../content/images/icons/vuejs-logo.png'
+import PythonLogo from '../../content/images/icons/python-480.png'
+import RustLogo from '../../content/images/icons/rust-logo-128.png'
+import GoLogo from '../../content/images/icons/Go-Logo_Blue.png'
 
 const Index = ({ data }) => {
 
@@ -26,13 +31,15 @@ const Index = ({ data }) => {
             </Title>
           </div>
           <SubTitle>
-            {"I am systems engineer, web-developer and robotics expert. Have a look around and don't be afraid to keep in touch."}
+            {
+              `
+              I'm a full-stack developer - I write backend systems in NodeJS, Python and Java; and 
+              specialize in frontend Javascript frameworks like VueJS, React and Svelte.
+            `}
           </SubTitle>
-          <div>
+          <div style={{ marginTop: "2rem" }}>
             <PrimaryButton>
-              {
-                "Contact Me"
-              }
+              Get in Touch
             </PrimaryButton>
           </div>
         </div>
@@ -49,6 +56,23 @@ const Index = ({ data }) => {
         />
       </Modal> */}
       </Box>
+
+      <div>
+        <h2 style={{ color: "#004196", margin: "2rem 0" }}>What I Do</h2>
+        <div style={{ marginBottom: "200px", padding: "3rem 0" }}>
+          <h3 style={{ color: "#004196", margin: "2rem 0" }}>
+            The Tech Stack
+          </h3>
+          <p>
+            I work with a number of frontend and backend technologies. I specifically specialise in:
+          </p>
+          <img style={{ width: "80px" }} src={NodeJsLogo} />
+          <img style={{ width: "80px" }} src={VueJsLogo} />
+          <img style={{ width: "80px" }} src={PythonLogo} />
+          <img style={{ width: "80px" }} src={RustLogo} />
+          <img style={{ width: "80px" }} src={GoLogo} />
+        </div>
+      </div>
       <div style={{ marginBottom: "200px", padding: "3rem 0" }}>
         <h2 style={{ color: "#004196", margin: "2rem 0" }}>Our Services</h2>
         <ContentBox>
@@ -141,8 +165,8 @@ export const query = graphql`
     file(relativePath: { eq: "images/gallery/flame-welcome.png" }) {
         childImageSharp {
           # Specify the image processing specifications right in the query.
-          fluid {
-            ...GatsbyImageSharpFluid
+          fluid (quality: 90) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
         publicURL
