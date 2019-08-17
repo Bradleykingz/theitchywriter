@@ -1,7 +1,7 @@
 import React from 'react'
 import './primaryButton.css'
 
-const PrimaryButton = ({children})=> {
+const PrimaryButton = ({ children }) => {
 
     return (
         <button>
