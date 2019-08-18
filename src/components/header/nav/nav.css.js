@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import MEDIA from '../../../helpers/mediaTemplates'
 
 export const Container = styled.nav`
   ul {
@@ -19,5 +20,13 @@ export const Container = styled.nav`
 
   img {
     width: 24px;
+  }
+
+  .nav_menu {
+    ${MEDIA.PHONE`
+      li {
+        font-size: 1.05rem;
+      }
+    `}
   }
 `;

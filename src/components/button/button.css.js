@@ -10,8 +10,8 @@ export const SecondaryButtonCss = styled.button`
     transition: all 0.5s ease-in-out;
     background: #31768a;
 
-    ${MEDIA.PHONE`
-        padding: 1.5rem 1.5rem;
+    ${MEDIA.BIG_PHONE`
+        padding: 1.35rem 0.95rem;
     `}
 
     &:hover {
