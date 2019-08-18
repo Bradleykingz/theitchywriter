@@ -1,9 +1,12 @@
 <p align="center">
-  <a href="https://github.com/fabe/gatsby-universal">
+  <a href="https://github.com/bradleykingz/gatsby-blog">
     <h2>
       The Kenyan Dev
     </h2>
   </a>
+</p>
+<p>
+  Built on top of Gatsby Universal.
 </p>
 
 <p align="center">
