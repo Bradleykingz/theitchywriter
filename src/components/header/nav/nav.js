@@ -9,9 +9,15 @@ import { SecondaryButton } from '../../button/button';
 
 const Nav = () => (
   <Container>
-    <ul>
+    <ul className={`nav_menu`}>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
       <li>
         <Link to="/about">About</Link>
+      </li>
+      <li>
+        <Link to="/work/">Work</Link>
       </li>
       <li>
         <Link to="/blog">Blog</Link>
@@ -28,8 +34,8 @@ const Nav = () => (
         </a>
       </li> */}
       <li>
-        <a href="http://there.com">
-          <SecondaryButton>Get in Touch</SecondaryButton>
+        <a href="/contact">
+          <SecondaryButton>GET IN TOUCH</SecondaryButton>
         </a>
       </li>
     </ul>

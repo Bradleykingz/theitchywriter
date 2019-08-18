@@ -39,19 +39,19 @@ const Gallery = () => {
   return (
     <Container>
       {
-        data.allMarkdownRemark.edges.map(({node, i})=> {
+        data.allMarkdownRemark.edges.map(({ node, i }) => {
           console.log(node.frontmatter.featuredImage);
-          if (node.fields.slug.indexOf("/blog/")!=-1) {
-            return <Item 
-                slug={node.fields.slug} 
-                tag={node.frontmatter.mainTag}
-                title= {node.frontmatter.title}
-                key={node.id}
-                copy={node.frontmatter.copy}
-                image={node.frontmatter.featuredImage}
-                tag={node.frontmatter.mainTag}
-                />
-          } 
+          if (node.fields.slug.indexOf("/blog/") != -1) {
+            return <Item
+              slug={node.fields.slug}
+              tag={node.frontmatter.mainTag}
+              title={node.frontmatter.title}
+              key={node.id}
+              copy={node.frontmatter.copy}
+              image={node.frontmatter.featuredImage}
+              tag={node.frontmatter.mainTag}
+            />
+          }
         })
       }
     </Container>
