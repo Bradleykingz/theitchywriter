@@ -28,7 +28,14 @@
       alt="styled with prettier"
     />
   </a>
+  
   <a href="https://app.netlify.com/sites/the-kenyan-dev/deploys">
+    Deploy log
+  </a>
+</p>
+
+Netlify Status.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/22dd12e0-5574-42cb-829b-aa9c8cffdffd/deploy-status)](https://app.netlify.com/sites/the-kenyan-dev/deploys)
 
 ## Lighthouse scores (on [Netlify](https://netlify.com))
 
