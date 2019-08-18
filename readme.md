@@ -1,5 +1,5 @@
 <p align="center">
-  < href="https://github.com/fabe/gatsby-universal">
+  <a href="https://github.com/fabe/gatsby-universal">
     <h2>
       The Kenyan Dev
     </h2>
