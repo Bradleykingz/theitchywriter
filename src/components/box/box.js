@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container } from './box.css';
+import { Container, HomepageContainer } from './box.css';
 
 const Box = ({ children }) => <Container>{children}</Container>;
 
@@ -9,3 +9,5 @@ Box.propTypes = {
 };
 
 export default Box;
+ 
+export const HomepageBox = ({ children }) => <HomepageContainer>{children}</HomepageContainer>;

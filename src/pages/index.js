@@ -11,20 +11,22 @@ import { graphql } from 'gatsby';
 import Footer from '../components/footer/footer';
 import 'global.css.js'
 import Img from 'gatsby-image'
-import PrimaryButton from '../components/button/primaryButton';
+import PrimaryButton, { FluidPrimaryButton } from '../components/button/primaryButton';
+
 import ContentBox from '../components/content/content';
 import NodeJsLogo from '../../content/images/icons/nodejs-480.png'
 import VueJsLogo from '../../content/images/icons/vuejs-logo.png'
 import PythonLogo from '../../content/images/icons/python-480.png'
 import RustLogo from '../../content/images/icons/rust-logo-128.png'
 import GoLogo from '../../content/images/icons/Go-Logo_Blue.png'
+import { HomepageBox } from '../components/box/box';
 
 const Index = ({ data }) => {
-
+ 
   return <div>
     <Layout>
-      <Box>
-        <div>
+      <HomepageBox>
+        <div className={`title_parent`}>
           <div>
             <Title as="h2" size="large">
               {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
@@ -38,9 +40,9 @@ const Index = ({ data }) => {
             `}
           </SubTitle>
           <div style={{ marginTop: "2rem" }}>
-            <PrimaryButton>
-              Get in Touch
-            </PrimaryButton>
+            <FluidPrimaryButton>
+              GET IN TOUCH
+            </FluidPrimaryButton>
           </div>
         </div>
 
@@ -55,10 +57,10 @@ const Index = ({ data }) => {
           muted
         />
       </Modal> */}
-      </Box>
+      </HomepageBox>
 
       <div style={{ marginBottom: "200px", padding: "3rem 0" }}>
-        <h2 style={{ color: "#004196", margin: "2rem 0" }}>Our Services</h2>
+        <h2 style={{ color: "#004196", margin: "2rem 0" }}>My Services</h2>
         <ContentBox>
           <div>
             <h3>Web Development</h3>

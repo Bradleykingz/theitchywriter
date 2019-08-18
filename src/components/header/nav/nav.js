@@ -4,6 +4,7 @@ import { Container } from './nav.css';
 import Github from '../../../../content/images/icons/github-logo.png'
 import Twitter from '../../../../content/images/icons/twitter.png'
 import PrimaryButton from '../../button/primaryButton';
+import { SecondaryButton } from '../../button/button';
 
 
 const Nav = () => (
@@ -28,7 +29,7 @@ const Nav = () => (
       </li> */}
       <li>
         <a href="http://there.com">
-          <PrimaryButton style={{width: "80px"}}>Get in Touch</PrimaryButton>
+          <SecondaryButton>Get in Touch</SecondaryButton>
         </a>
       </li>
     </ul>
