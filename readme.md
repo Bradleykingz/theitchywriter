@@ -26,9 +26,7 @@
   
 </p>
 
-[![Styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1a8938ce-9533-4391-a3b3-46732d67b188/deploy-status)](https://app.netlify.com/sites/theitchywriter/deploys)
+[![Styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier) [![Netlify Status](https://api.netlify.com/api/v1/badges/1a8938ce-9533-4391-a3b3-46732d67b188/deploy-status)](https://app.netlify.com/sites/theitchywriter/deploys)
 
 
 ## Lighthouse scores (on [Netlify](https://netlify.com))
