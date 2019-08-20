@@ -10,23 +10,7 @@
   Built on top of Gatsby Universal.
 </p>
 
-<p align="center">
-  <a href="https://circleci.com/gh/fabe/gatsby-universal">
-    <img
-      src="https://circleci.com/gh/fabe/gatsby-universal.svg?style=svg"
-      alt="CircleCI"
-    />
-  </a>
-  <a href="https://greenkeeper.io/">
-    <img
-      src="https://badges.greenkeeper.io/fabe/gatsby-universal.svg"
-      alt="Greenkeeper badge"
-    />
-  </a>
-  
-</p>
-
-[![Styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier) [![Netlify Status](https://api.netlify.com/api/v1/badges/1a8938ce-9533-4391-a3b3-46732d67b188/deploy-status)](https://app.netlify.com/sites/theitchywriter/deploys)
+[[](https://badges.greenkeeper.io/fabe/gatsby-universal.svg)](https://greenkeeper.io/) [[](https://circleci.com/gh/fabe/gatsby-universal.svg?style=svg)](https://circleci.com/gh/fabe/gatsby-universal) [![Styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier) [![Netlify Status](https://api.netlify.com/api/v1/badges/1a8938ce-9533-4391-a3b3-46732d67b188/deploy-status)](https://app.netlify.com/sites/theitchywriter/deploys)
 
 
 ## Lighthouse scores (on [Netlify](https://netlify.com))
