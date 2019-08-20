@@ -1,10 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  siteTitle: `TheKenyanDev`,
-  siteTitleShort: `TKD`,
-  siteDescription: `A site about what the tech industry is up to.`,
-  siteUrl: `https://thekenyandev.com`,
+  siteTitle: `The Itchy Writer`,
+  siteTitleShort: `TIW`,
+  siteDescription: `A site consolidating one itchy writer's thoughts about basically everything.`,
+  siteUrl: `https://theitchywriter.com`,
   themeColor: `#000`,
   backgroundColor: `#fff`,
   pathPrefix: null,
