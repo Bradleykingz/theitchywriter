@@ -1,28 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Layout from 'components/layout';
-import Box from 'components/box';
-import Title from 'components/title';
-import { ShadowBox, SubTitle } from 'components/title';
+import Title, {SubTitle} from 'components/title';
 import Gallery from 'components/gallery';
-import IOExample from 'components/io-example';
-import Modal from 'containers/modal';
-import { graphql } from 'gatsby';
+import {graphql} from 'gatsby';
 import Footer from '../components/footer/footer';
 import 'global.css.js'
-import Img from 'gatsby-image'
-import PrimaryButton, { FluidPrimaryButton } from '../components/button/primaryButton';
+import PrimaryButton, {FluidPrimaryButton} from '../components/button/primaryButton';
+import woman from '../images/server-woman.png';
 
 import ContentBox from '../components/content/content';
-import NodeJsLogo from '../../content/images/icons/nodejs-480.png'
-import VueJsLogo from '../../content/images/icons/vuejs-logo.png'
-import PythonLogo from '../../content/images/icons/python-480.png'
-import RustLogo from '../../content/images/icons/rust-logo-128.png'
-import GoLogo from '../../content/images/icons/Go-Logo_Blue.png'
-import { HomepageBox } from '../components/box/box';
+import {HomepageBox} from '../components/box/box';
 
 const Index = ({ data }) => {
- 
+
   return <div>
     <Layout>
       <HomepageBox>
@@ -46,7 +37,7 @@ const Index = ({ data }) => {
           </div>
         </div>
 
-        <Img fluid={data.file.childImageSharp.fluid} />
+        <img style={{maxWidth: "800px"}} src={woman} alt={"woman"}/>
 
         {/* <Modal>
         <video
@@ -71,8 +62,8 @@ const Index = ({ data }) => {
           <div>
             <h3>Big Data</h3>
             <p>
-              We use Big Data frameworks like Hadoop and Spark to build data pipelines for businesses. 
-              This includes custom machine learning training models and natural language processing. 
+              We use Big Data frameworks like Hadoop and Spark to build data pipelines for businesses.
+              This includes custom machine learning training models and natural language processing.
             </p>
           </div>
 
