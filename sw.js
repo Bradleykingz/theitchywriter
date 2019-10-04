@@ -26,21 +26,17 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-fd086e9194b89dbaa8cc.js"
+    "url": "webpack-runtime-1b12f00b266b6c206075.js"
   },
   {
-    "url": "app-98d670d9bfc35f15e30a.js"
+    "url": "app-8739eecba2da0d3ce14b.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-afa13104d7ebaefdac3e.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "2185d9354ae77dcab4497403805a2a0e"
-  },
-  {
-    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "b288ab42db66610f168cce9c92b105f8"
+    "revision": "bb15bfdcbc59ec33a8632b1e16bd996c"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -59,12 +55,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/theitchywriter`), ``)
+  pathname = pathname.replace(new RegExp(`^`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/theitchywriter/app-98d670d9bfc35f15e30a.js`))) {
+  if (!resources || !(await caches.match(`/app-8739eecba2da0d3ce14b.js`))) {
     return await fetch(event.request)
   }
 
@@ -77,7 +73,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/theitchywriter/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
   return await caches.match(offlineShell)
 })
 
