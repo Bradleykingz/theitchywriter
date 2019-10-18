@@ -1,33 +1,18 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Layout from 'components/layout';
 import Title, {SubTitle} from 'components/title';
+import Gallery from 'components/gallery';
 import {graphql} from 'gatsby';
 import Footer from '../components/footer/footer';
 import 'global.css.js'
 import PrimaryButton, {FluidPrimaryButton} from '../components/button/primaryButton';
 import woman from '../images/server-woman.png';
 
+import ContentBox from '../components/content/content';
 import {HomepageBox} from '../components/box/box';
-import {Link} from "@reach/router";
-import ContentBox from "../components/content/content";
 
 const Index = ({ data }) => {
-
-  // useEffect(() => {
-  //   // Your web app's Firebase configuration
-  //   var firebaseConfig = {
-  //     apiKey: "AIzaSyBba5aNAnaerx45zuBxQakdcBbc3fjMEnA",
-  //     authDomain: "retroshift-1518726491700.firebaseapp.com",
-  //     databaseURL: "https://retroshift-1518726491700.firebaseio.com",
-  //     projectId: "retroshift-1518726491700",
-  //     storageBucket: "retroshift-1518726491700.appspot.com",
-  //     messagingSenderId: "949356293942",
-  //     appId: "1:949356293942:web:8731126565a79380cc4d97"
-  //   };
-  //   // Initialize Firebase
-  //   window.firebase.initializeApp(firebaseConfig);
-  // });
 
   return <div>
     <Layout>
@@ -35,23 +20,20 @@ const Index = ({ data }) => {
         <div className={`title_parent`}>
           <div>
             <Title as="h2" size="large">
-              Hey there, I'm Bradley.
+              {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
             </Title>
           </div>
           <SubTitle>
-            I love to write, tell captivating stories and
-            tell terrible jokes. Have a look around and don't be afraid to say hi if you like
-            any of my posts.
+            {
+              `
+              I'm a full-stack developer - I write backend systems in NodeJS, Python and Java; and 
+              specialize in frontend Javascript frameworks like VueJS, React and Svelte.
+            `}
           </SubTitle>
-          <div style={{marginTop: "2rem"}}>
-            <SubTitle>
-              You're probably here looking for my blog, so have fun!
-            </SubTitle>
-            <Link to={"/blog"}>
-              <FluidPrimaryButton>
-                GO TO BLOG
-              </FluidPrimaryButton>
-            </Link>
+          <div style={{ marginTop: "2rem" }}>
+            <FluidPrimaryButton>
+              GET IN TOUCH
+            </FluidPrimaryButton>
           </div>
         </div>
 
@@ -69,57 +51,70 @@ const Index = ({ data }) => {
       </HomepageBox>
 
       <div style={{ marginBottom: "200px", padding: "3rem 0" }}>
-        <h2 style={{ color: "#004196", margin: "2rem 0" }}>What I Write About</h2>
+        <h2 style={{ color: "#004196", margin: "2rem 0" }}>My Services</h2>
         <ContentBox>
+          <div>
+            <h3>Web Development</h3>
+            <p>
+              We build modern websites using state-of-the art Javascript frameworks - VueJS & React (this website is build using ReactJS).
+            </p>
+          </div>
+          <div>
+            <h3>Big Data</h3>
+            <p>
+              We use Big Data frameworks like Hadoop and Spark to build data pipelines for businesses.
+              This includes custom machine learning training models and natural language processing.
+            </p>
+          </div>
 
           <div>
-            <h3>First Experiences</h3>
+            <h3>Tech Stack Consultation</h3>
             <p>
-              This is a general series about basically every first experience I've had with various topics, people or experiences,
-              at least as far as I can remember.
+              Need a quote for the price of a simple static website or how long a logo design is going to take?
             </p>
           </div>
           <div>
-            <h3>Mental Health</h3>
+            <h3>Writing</h3>
             <p>
-              The mental health posts are a lot more specific in their target audience - people that have been through depression
-              like me or anyone that just wants a resource for learning about it.
+              I spend my free time writing blog posts on technology-oriented websites like Dataversity, Forbes, Alligatorio and Eggheadio.
             </p>
           </div>
           <div>
-            <h3>Interesting People</h3>
+            <h3>Tax Preparation</h3>
             <p>
-              I believe that almost every person I meet is interesting in one way or another. I feel the need to write about the
-              more interesting experiences I've had with people who <em>really</em> stand out, often for reasons that could be boring
-              to some people.
+              Officia mollit mollit eiusmod veniam Lorem aliqua commodo sit fugiat eiusmod. Ut irure reprehenderit id deserunt ad consequat veniam mollit. Reprehenderit ea deserunt enim sint ad duis nisi mollit pariatur velit sunt laborum labore.
             </p>
           </div>
           <div>
-            <h3>TIL</h3>
+            <h3>Auditing</h3>
             <p>
-              I learn a lot of stuff * everyday, so why not share it with the world?
+              Proident irure nulla aute reprehenderit nostrud nisi sint incididunt occaecat exercitation id do dolore do. Enim in deserunt culpa non reprehenderit fugiat proident in id non est consequat commodo laboris.
             </p>
-            <small>* Does not include more boring things like work stuff.</small>
           </div>
           <div>
-            <h3>Masculinity/Manliness</h3>
+            <h3>Superannuation</h3>
             <p>
-              General thoughts about how masculinity can be defined, by whom and why its important.
+              Sint ad cupidatat proident Lorem nulla consectetur nisi reprehenderit ea elit id voluptate sit exercitation. Nisi est elit esse in ullamco aliqua commodo velit consectetur laborum voluptate dolore.
             </p>
           </div>
 
         </ContentBox>
         <div style={{ textAlign: "center" }}>
           <PrimaryButton>
-            View all Categories
+            VIEW ALL SERVICES
           </PrimaryButton>
         </div>
       </div>
+      <div>
+        <h2 style={{ color: "#004196", margin: "2rem 0" }}>Latest Blog Posts</h2>
+        <Gallery />
+      </div>
     </Layout>
 
+    <div style={{ height: '50vh' }} />
     <Footer></Footer>
     {/* <IOExample /> */}
-  </div>;
+  </div>
 };
 
 Index.propTypes = {

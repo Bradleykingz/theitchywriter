@@ -11,6 +11,9 @@ const Nav = () => (
   <Container>
     <ul className={`nav_menu`}>
       <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
         <Link to="/about">About</Link>
       </li>
       <li>
@@ -19,7 +22,7 @@ const Nav = () => (
       <li>
         <Link to="/blog">Blog</Link>
       </li>
-
+      
       {/* <li>
         <a href="https://twitter.com/user/bradleykingz">
           <img src={Twitter}></img>
@@ -31,10 +34,8 @@ const Nav = () => (
         </a>
       </li> */}
       <li>
-        <a href='https://ko-fi.com/R5R014YIM' target='_blank'>
-          <img style={{height: "36px", width: "140px"}}
-               src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=2'
-               border='0' alt='Buy Me a Coffee at ko-fi.com'/>
+        <a href="/contact">
+          <SecondaryButton>GET IN TOUCH</SecondaryButton>
         </a>
       </li>
     </ul>

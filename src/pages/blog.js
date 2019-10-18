@@ -10,9 +10,9 @@ const Blog = ({ data }) => (
     <Head pageTitle={data.aboutJson.title} />
     <div>
       <h2>
-         Articles
+         Articles 
       </h2>
-      <input type="text" placeholder="Search"/>
+      <input type="text" placeholder="Search"></input>
     </div>
   </Layout>
 );
