@@ -1,11 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import Title from "../components/title"
+import Layout from "../components/layout/layout"
+import Title from "../components/title/title"
 import Footer from "../components/footer/footer";
 
 export default ({ data }) => {
-  const post = data.markdownRemark
+  const post = data.markdownRemark;
   return (
     <div>
       <Layout>
@@ -14,7 +14,7 @@ export default ({ data }) => {
         </Title>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </Layout>
-      <Footer></Footer>
+      <Footer/>
     </div>
   )
 }

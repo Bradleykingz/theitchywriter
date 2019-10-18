@@ -11,6 +11,13 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "A-79881736-4",
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
-import Head from 'components/head';
-import Header from 'components/header';
-import GlobalStyle from 'global.css.js';
+import Head from '../../components/head/head';
+import Header from '../../components/header/header';
+import GlobalStyle from '../../global.css.js';
 import { SmallContentContainer } from './layout.css';
 
 const Layout = ({ data, children }) => (
