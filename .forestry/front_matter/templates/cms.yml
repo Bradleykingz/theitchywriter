@@ -20,3 +20,5 @@ fields:
 - type: file
   name: featuredImage
   label: featuredImage
+pages:
+- content/blog/random-thoughts-about-retrobie.md
